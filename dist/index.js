@@ -20,6 +20,10 @@ var _cheerio = require('cheerio');
 
 var _cheerio2 = _interopRequireDefault(_cheerio);
 
+var _es6Promise = require('es6-promise');
+
+var _es6Promise2 = _interopRequireDefault(_es6Promise);
+
 var _isomorphicFetch = require('isomorphic-fetch');
 
 var _isomorphicFetch2 = _interopRequireDefault(_isomorphicFetch);

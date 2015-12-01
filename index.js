@@ -3,6 +3,7 @@ import http from 'http';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import cheerio from 'cheerio';
+import Promise from 'es6-promise';
 import fetch from 'isomorphic-fetch';
 
 var app = express();

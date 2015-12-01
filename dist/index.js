@@ -68,7 +68,7 @@ app.get('/alkitab/:version/:book/:chapter', function (req, res) {
                 type = 'content';
             }
 
-            if (type) items.push({
+            if (content) items.push({
                 content: content,
                 type: type,
                 verse: verse

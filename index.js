@@ -43,7 +43,7 @@ app.get('/alkitab/:version/:book/:chapter', (req, res) => {
                     type = 'content';
                 }
 
-                if (type)
+                if (content)
                     items.push({
                         content,
                         type,

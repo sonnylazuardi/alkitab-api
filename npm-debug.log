@@ -7,7 +7,7 @@
 6 info start alkitab-api@1.0.0
 7 verbose unsafe-perm in lifecycle true
 8 info alkitab-api@1.0.0 Failed to exec start script
-9 verbose stack Error: alkitab-api@1.0.0 start: `babel-node index.js`
+9 verbose stack Error: alkitab-api@1.0.0 start: `node index.js`
 9 verbose stack Exit status 1
 9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
 9 verbose stack     at emitTwo (events.js:87:13)
@@ -24,13 +24,13 @@
 14 error node v4.2.2
 15 error npm  v2.14.7
 16 error code ELIFECYCLE
-17 error alkitab-api@1.0.0 start: `babel-node index.js`
+17 error alkitab-api@1.0.0 start: `node index.js`
 17 error Exit status 1
-18 error Failed at the alkitab-api@1.0.0 start script 'babel-node index.js'.
+18 error Failed at the alkitab-api@1.0.0 start script 'node index.js'.
 18 error This is most likely a problem with the alkitab-api package,
 18 error not with npm itself.
 18 error Tell the author that this fails on your system:
-18 error     babel-node index.js
+18 error     node index.js
 18 error You can get their info via:
 18 error     npm owner ls alkitab-api
 18 error There is likely additional logging output above.

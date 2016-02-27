@@ -68,11 +68,16 @@ app.get('/alkitab/:version/:book/:chapter', function (req, res) {
 
             if (title) {
                 type = 'title';
+                content = title;
             } else if (content) {
                 type = 'content';
             }
 
-            if (content) items.push({
+            if (data.attr('hidden') === 'hidden' || data.hasClass('loading') || data.hasClass('error')) {
+                type = null;
+            }
+
+            if (type) items.push({
                 content: content,
                 type: type,
                 verse: verse

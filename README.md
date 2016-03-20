@@ -16,17 +16,17 @@ clone this repository, do the following command
 
 Format: 
 
-	http://busintime.id:8080/alkitab/{version}/{book}/{chapter}
+	http://alkitab.gbippl.id/alkitab/{version}/{book}/{chapter}
 
 Example: 
 
 - Terjemahan Baru (TB)
 
-	http://busintime.id:8080/alkitab/tb/Kejadian/1
+	http://alkitab.gbippl.id/alkitab/tb/Kejadian/1
 
 - King James Version (KJV)
 
-	http://busintime.id:8080/alkitab/av/Genesis/1
+	http://alkitab.gbippl.id/alkitab/av/Genesis/1
 
 Result: 
 
@@ -57,17 +57,17 @@ Result:
 
 Format: 
 
-	http://busintime.id:8080/alkitab/{version}/{book}/{chapter}/{verse}
+	http://alkitab.gbippl.id/alkitab/{version}/{book}/{chapter}/{verse}
 
 Example: 
 
 - Terjemahan Baru (TB)
 
-	http://busintime.id:8080/alkitab/tb/Kejadian/1/1
+	http://alkitab.gbippl.id/alkitab/tb/Kejadian/1/1
 
 - King James Version (KJV)
 
-	http://busintime.id:8080/alkitab/av/Genesis/1/1
+	http://alkitab.gbippl.id/alkitab/av/Genesis/1/1
 
 Result: 
 

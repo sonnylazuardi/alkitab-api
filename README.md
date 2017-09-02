@@ -1,11 +1,17 @@
 # Alkitab API
 
-Bible API for Everyone. Using express with Babel ES6/ES2015, and cheerio. 
+[💁 New Update] GraphQL Support
+
+![alkitabgraphql](https://media.giphy.com/media/3o7aCXBw8qRNf7n7hK/giphy.gif)
+
+Code & Demo: https://launchpad.graphql.com/n84vv4q37
+
+Bible API for Everyone. Using express with Babel ES6/ES2015, and cheerio.
 
 ## Installing
 
 clone this repository, do the following command
-	
+
 	npm install -g babel-cli
 	npm install
 	babel-node index.js
@@ -14,11 +20,11 @@ clone this repository, do the following command
 
 ### Chapter
 
-Format: 
+Format:
 
 	http://alkitab.gbippl.id/alkitab/{version}/{book}/{chapter}
 
-Example: 
+Example:
 
 - Terjemahan Baru (TB)
 
@@ -28,7 +34,7 @@ Example:
 
 	http://alkitab.gbippl.id/alkitab/av/Genesis/1
 
-Result: 
+Result:
 
 ```
 
@@ -55,11 +61,11 @@ Result:
 
 ### Verse
 
-Format: 
+Format:
 
 	http://alkitab.gbippl.id/alkitab/{version}/{book}/{chapter}/{verse}
 
-Example: 
+Example:
 
 - Terjemahan Baru (TB)
 
@@ -69,7 +75,7 @@ Example:
 
 	http://alkitab.gbippl.id/alkitab/av/Genesis/1/1
 
-Result: 
+Result:
 
 ```
 {
@@ -206,4 +212,3 @@ Alkitab Mobile SABDA [http://alkitab.mobi/](http://alkitab.mobi/)
 ## License
 
 MIT License
-

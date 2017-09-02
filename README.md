@@ -22,17 +22,17 @@ clone this repository, do the following command
 
 Format:
 
-	http://alkitab.gbippl.id/alkitab/{version}/{book}/{chapter}
+	http://localhost:3000/alkitab/{version}/{book}/{chapter}
 
 Example:
 
 - Terjemahan Baru (TB)
 
-	http://alkitab.gbippl.id/alkitab/tb/Kejadian/1
+	http://localhost:3000/alkitab/tb/Kejadian/1
 
 - King James Version (KJV)
 
-	http://alkitab.gbippl.id/alkitab/av/Genesis/1
+	http://localhost:3000/alkitab/av/Genesis/1
 
 Result:
 
@@ -63,17 +63,17 @@ Result:
 
 Format:
 
-	http://alkitab.gbippl.id/alkitab/{version}/{book}/{chapter}/{verse}
+	http://localhost:3000/alkitab/{version}/{book}/{chapter}/{verse}
 
 Example:
 
 - Terjemahan Baru (TB)
 
-	http://alkitab.gbippl.id/alkitab/tb/Kejadian/1/1
+	http://localhost:3000/alkitab/tb/Kejadian/1/1
 
 - King James Version (KJV)
 
-	http://alkitab.gbippl.id/alkitab/av/Genesis/1/1
+	http://localhost:3000/alkitab/av/Genesis/1/1
 
 Result:
 

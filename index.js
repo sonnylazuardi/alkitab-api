@@ -23,6 +23,7 @@ const getChapters = (version, book, chapter, verseNumber) => {
     return axios.get(`http://alkitab.mobi/${version}/${book}/${chapter}`).then(({ data }) => {
       let $ = cheerio.load(data);
       let items = [];
+      let lastVerse = 0;
       $('p').filter((i, el) => {
         let data = $(el);
         let content = data
@@ -56,9 +57,10 @@ const getChapters = (version, book, chapter, verseNumber) => {
         if (title) {
           type = 'title';
           content = title;
-          verse = i;
+          verse = lastVerse + 1;
         } else if (content) {
           type = 'content';
+          lastVerse = verse;
         }
 
         if (data.attr('hidden') === 'hidden' || data.hasClass('loading') || data.hasClass('error')) {

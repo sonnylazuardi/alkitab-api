@@ -2,11 +2,9 @@
 
 [💁 New Update] GraphQL Support
 
-![alkitabgraphql](https://media.giphy.com/media/3o7aCXBw8qRNf7n7hK/giphy.gif)
+![alkitabgraphql](screen.png)
 
-Code & Demo: https://launchpad.graphql.com/n84vv4q37
-
-![alkitabapi](https://i.imgur.com/ZIB6Bpn.png)
+Code & Demo: https://bible.bibleify.app
 
 Bible API for Everyone. Using express with Babel ES6/ES2015, and cheerio.
 
@@ -14,93 +12,72 @@ Bible API for Everyone. Using express with Babel ES6/ES2015, and cheerio.
 
 clone this repository, do the following command
 
-    npm install -g babel-cli
     npm install
-    babel-node index.js
+    node index.js
 
-## API Endpoint
+## Usage
 
-### Chapter
-
-Format:
-
-    http://localhost:3000/alkitab/{version}/{book}/{chapter}
-
-Example:
-
-- Terjemahan Baru (TB)
-
-      	http://localhost:3000/alkitab/tb/Kejadian/1
-
-- King James Version (KJV)
-
-      	http://localhost:3000/alkitab/av/Genesis/1
-
-Result:
-
-```
-
-[
-	{
-		content: "Pada mulanya Allah menciptakan langit dan bumi.",
-		type: "content",
-		verse: "1"
-	},
-	{
-		content: "Bumi belum berbentuk dan kosong; gelap gulita menutupi samudera raya, dan Roh Allah melayang-layang di atas permukaan air.",
-		type: "content",
-		verse: "2"
-	},
-	{
-		content: "Berfirmanlah Allah: "Jadilah terang." Lalu terang itu jadi.",
-		type: "content",
-		verse: "3"
-	},
-	...
-]
-```
-
-### Verse
-
-Format:
-
-    http://localhost:3000/alkitab/{version}/{book}/{chapter}/{verse}
-
-Example:
-
-- Terjemahan Baru (TB)
-
-      	http://localhost:3000/alkitab/tb/Kejadian/1/1
-
-- King James Version (KJV)
-
-      	http://localhost:3000/alkitab/av/Genesis/1/1
-
-Result:
+- Write the query:
 
 ```
 {
-	content: "Pada mulanya Allah menciptakan langit dan bumi.",
-	type: "content",
-	verse: "1",
-	version: "TB",
-	alt: [
-		{
-			content: "[[DRAFT AYT]] Pada mulanya, Allah menciptakan langit dan bumi.",
-			type: "content",
-			verse: "1",
-			version: "AYTDRAFT"
-		},
-		{
-			content: "Bahwa pada mula pertama dijadikan Allah akan langit dan bumi.",
-			type: "content",
-			verse: "1",
-			version: "TL"
-		},
-		...
-	]
+  passages (version: tb, book: "Mazmur", chapter:23) {
+    verses {
+      verse
+      type
+      content
+    }
+  }
 }
+```
 
+- Hit the play button
+- Result would be like this:
+
+```
+{
+  "data": {
+    "passages": {
+      "verses": [
+        {
+          "verse": 1,
+          "type": "title",
+          "content": "TUHAN, gembalaku yang baik"
+        },
+        {
+          "verse": 1,
+          "type": "content",
+          "content": "Mazmur Daud. TUHAN adalah gembalaku, takkan kekurangan aku."
+        },
+        {
+          "verse": 2,
+          "type": "content",
+          "content": "Ia membaringkan aku di padang yang berumput hijau, Ia membimbing aku ke air yang tenang;"
+        },
+        {
+          "verse": 3,
+          "type": "content",
+          "content": "Ia menyegarkan jiwaku. Ia menuntun aku di jalan yang benar oleh karena nama-Nya."
+        },
+        {
+          "verse": 4,
+          "type": "content",
+          "content": "Sekalipun aku berjalan dalam lembah kekelaman, aku tidak takut bahaya, sebab Engkau besertaku; gada-Mu dan tongkat-Mu, itulah yang menghibur aku."
+        },
+        {
+          "verse": 5,
+          "type": "content",
+          "content": "Engkau menyediakan hidangan bagiku, di hadapan lawanku; Engkau mengurapi kepalaku dengan minyak; pialaku penuh melimpah."
+        },
+        {
+          "verse": 6,
+          "type": "content",
+          "content": "Kebajikan dan kemurahan belaka akan mengikuti aku, seumur hidupku; dan aku akan diam dalam rumah TUHAN sepanjang masa."
+        }
+      ]
+    }
+  }
+}
 ```
 
 ## Supported languages & versions

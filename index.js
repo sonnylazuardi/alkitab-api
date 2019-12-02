@@ -129,6 +129,32 @@ const typeDefs = `
     makasar
     bali
     lampung
+    simalungun
+    nias
+    aceh
+    mentawai
+    mamasa
+    berik
+    manggarai
+    sabu
+    kupang
+    abun
+    meyah
+    uma
+    yawa
+    gorontalo
+    barantak
+    bambam
+    mongondow
+    aralle
+    napu
+    sangir
+    taa
+    rote
+    galela
+    yali
+    tabaru
+    karo
   }
 	
   type Query {

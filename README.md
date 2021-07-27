@@ -4,7 +4,7 @@
 
 ![alkitabgraphql](screen.png)
 
-Code & Demo: https://bible.bibleify.app
+Code & Demo: https://bible.sonnylab.com
 
 Bible API for Everyone. Using express with Babel ES6/ES2015, and cheerio.
 
